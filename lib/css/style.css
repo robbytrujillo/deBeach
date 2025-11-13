@@ -268,3 +268,70 @@ header {
   -o-transition: all 0.3s ease;
 }
 /* Beach End */
+
+/* Register Start  */
+.register {
+  padding: 50px 0 100px 0;
+}
+
+.register .register-box {
+  color: #ffffff;
+  text-align: center;
+}
+
+.register .register-box h1 {
+  margin-bottom: 50px;
+}
+
+.register .register-box h3 {
+  font-weight: 400;
+  margin-bottom: 10px;
+  animation: animasi;
+  -webkit-animation: animasi 2s infinite;
+}
+
+@keyframes animasi {
+  0% {
+    transform: scale(1);
+    -webkit-transition: scale(1);
+    -moz-transition: scale(1);
+    -ms-transition: scale(1);
+    -o-transition: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    -moz-transition: scale(1.2);
+    -ms-transition: scale(1.2);
+    -o-transition: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transition: scale(1);
+    -moz-transition: scale(1);
+    -ms-transition: scale(1);
+    -o-transition: scale(1);
+  }
+}
+
+.register .register-box button {
+  border: none;
+  min-width: 100px;
+  min-height: 40px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  cursor: pointer;
+  background-color: #0050b3;
+  color: #ffffff;
+  padding-inline: 10px;
+}
+
+.register .register-box button i {
+  font-size: 16px;
+  font-weight: bold;
+  margin-inline: 5px;
+}
+/* Register End  */
