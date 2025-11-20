@@ -335,3 +335,51 @@ header {
   margin-inline: 5px;
 }
 /* Register End  */
+
+/* Footer Start */
+.footer {
+  padding: 50px 0 50px 0;
+  background-color: #0050b3;
+}
+
+.footer .footer-box {
+  display: grid;
+  grid-template-columns: 2fr auto 2fr;
+  column-gap: 100px;
+  align-items: center;
+}
+
+.footer .footer-box .box {
+  color: #ffffff;
+}
+
+.footer .footer-box .box:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.footer .footer-box .box:nth-child(2) a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.footer .footer-box .box p {
+  font-weight: 200; 
+}
+
+.footer .footer-box .box:nth-child(1) {
+  font-size: 12px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.footer .footer-box .box:nth-child(3) {
+  text-align: center; 
+}
+
+.footer .footer-box .box:nth-child(3) span {
+  font-weight: bold; 
+}
+/* Footer End */
