@@ -383,3 +383,134 @@ header {
   font-weight: bold; 
 }
 /* Footer End */
+
+/* Responsive Start */
+@media screen and (max-width: 1200px) {
+  .hero .hero-box .box:nth-child(1) button {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .menu-bar {
+    display: block;
+  }
+
+  .navbar .navbar-box .menu {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    right: 50%;
+    transform: translateX(50%);
+    -webkit-transition: translateX(50%);
+    -moz-transition: translateX(50%);
+    -ms-transition: translateX(50%);
+    -o-transition: translateX(50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    background-color: #0050b3;
+  }
+
+  .navbar .navbar-box .menu.menu-active {
+    top: 80px;
+    opacity: 1;
+    border-top: 1px solid #fff;
+  }
+
+  .hero .hero-box .box:nth-child(1) p {
+    font-size: 14px;
+  }
+
+  .register .register-box h1 {
+    font-size: 28px;
+  }
+
+  .footer .footer-box {
+    grid-template-columns: 1fr; /* Ubah menjadi 1 kolom ke bawah */
+    gap: 50px; /* Jarak vertikal antar elemen */
+    text-align: center; /* Rata tengah semua teks */
+  }
+
+  /* Reset max-width paragraf agar full di HP */
+  .footer .footer-box .box:nth-child(1) p {
+    max-width: 100%; 
+  }
+
+  /* Tengahkan judul menu & garis bawahnya */
+  .footer .footer-box .box:nth-child(2) {
+    align-items: center; /* Link menu jadi di tengah */
+  }
+  
+  .footer .footer-box .box:nth-child(2) h3::after {
+    left: 50%;
+    transform: translateX(-50%); /* Garis hiasan geser ke tengah */
+  }
+
+  /* Reset copyright jadi rata tengah */
+  .footer .footer-box .box:nth-child(3) {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero .hero-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+  }
+
+  .hero .hero-box .box:nth-child(1) {
+    order: 2;
+    text-align: center;
+  }
+
+  .hero .hero-box .box:nth-child(2) {
+    order: 1;
+    text-align: center;
+  }
+
+  .hero .hero-box .box:nth-child(2) img {
+    width: 55vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero .hero-box .box:nth-child(1) h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .register .register-box button {
+    margin-button: 5px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  /* .hero .hero-box {
+    row-gap: 0;
+  } */
+
+  .hero .hero-box .box:nth-child(2) img {
+    width: 55vw;
+    align-self: flex-end;
+    justify-self: center;
+  }
+
+  .beach .beach-box {
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+  }
+}
+/* Responsive End */
+
+
+
